@@ -48,6 +48,15 @@ brew install gmp libsodium imagemagick
 
 Note that the supported extension are not exhaustive, so you may need edit the `bin/install` script to support additional extension. Feel free to submit a PR for any missing extensions.
 
+#### Debian/Ubuntu
+
+There are certain packages needed.
+
+```
+# Tested from Peppermint OS (Debian 12)
+sudo apt install libcurl4-openssl-dev libgd-dev libonig-dev libzip-dev build-essential autoconf libtool bison re2c pkg-config  libxml2-dev libssl-dev libsqlite3-dev libpq-dev libreadline-dev
+```
+
 #### PHP-PEAR
 
 If PHP PEAR is down you can install PHP without PEAR. Specify `PHP_WITHOUT_PEAR` variable with any value
